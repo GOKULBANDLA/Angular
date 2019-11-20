@@ -41,8 +41,8 @@
         "role": "Admin",
         "preferences": {
           "lang": "en",
-          "generes": [],
-          "theaters": []
+          "generes": "",
+          "theaters": "Kapali"
         },
         "ratings": {
           "movieId": "",
@@ -59,9 +59,7 @@
         "city": "Bangalore",
         "gLocation": "test",
         "capacity": 50,
-        "movies": [
-          84348
-        ]
+        "movies": [123587]
       },
       {
         "tid": "1",
@@ -69,9 +67,15 @@
         "city": "s",
         "gLocation": "g",
         "capacity": 100,
-        "movies": [
-          84348
-        ]
+        "movies": [123587]
+      },
+      {
+        "tid": "1234",
+        "name": "Local",
+        "city": "Bangalore",
+        "gLocation": "40.741895,-73.989308",
+        "capacity": 50,
+        "movies": [123587]
       }
     ]
   }

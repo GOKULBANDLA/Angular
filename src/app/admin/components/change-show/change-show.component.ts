@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild, TemplateRef, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, TemplateRef, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { theaterList } from 'src/app/reducers';
 import { AdminService } from '../../services/admin.service';
@@ -15,32 +15,37 @@ export class ChangeShowComponent implements OnInit {
   movieInput: FormControl;
   selectTheater: FormControl;
   movieResult;
+  private subscription;
   selectedTheater;
   nowShowing = [];
   nowPlaying = [];
   @ViewChild('successDialog') successDialog: TemplateRef<any>;
 
-  constructor(private adminService: AdminService, private matDialog: MatDialog) {
+  constructor(private adminService: AdminService, private cd: ChangeDetectorRef,private matDialog: MatDialog) {
     this.movieInput = new FormControl();
     this.selectTheater = new FormControl();
   }
 
   ngOnInit() {
-    this.movieInput.valueChanges.subscribe(value => {
+    this.subscription = this.movieInput.valueChanges.subscribe(value => {
       if (value) {
-        this.adminService.searchMovie(value).subscribe(movies => {
-          this.movieResult = movies['results'];
-        });
+       this.adminService.searchMovie(value).subscribe(x=>{
+        this.movieResult = x;
+       })
+        console.log(this.movieResult)
       }
     });
     this.selectTheater.valueChanges.subscribe(value => {
       this.selectedTheater = value;
+      this.cd.detectChanges();
       this.nowShowing = [];
     });
   }
   addMovie(movie) {
+    this.movieResult=[];
     this.nowShowing.push(movie.name);
     this.nowPlaying.push(movie.id);
+   
   }
   save() {
     this.matDialog.open(this.successDialog);
@@ -66,7 +71,8 @@ export class ChangeShowComponent implements OnInit {
   trackMovie(index, movie) {
     if (movie) {
       return movie.id;
-    } else {
+    } 
+    else {
       return -1;
     }
   }
