@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+html,
+body {
+  height: 100%;
+  color: white;
+  z-index: 1;
+  background-color: rgb(48, 48, 48);
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-display: auto;
+}
+.cdk-virtual-scroll-content-wrapper {
+  display: flex; // for 3 cards in row
+  max-width: 100%;
+  flex-wrap: wrap; //spacing
+  justify-content: space-evenly; //equal spacing to be left
+  
+} 
+ 

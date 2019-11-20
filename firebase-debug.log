@@ -1,0 +1,224 @@
+[debug] [2019-11-20T07:49:24.208Z] ----------------------------------------------------------------------
+[debug] [2019-11-20T07:49:24.210Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-11-20T07:49:24.211Z] CLI Version:   7.8.0
+[debug] [2019-11-20T07:49:24.211Z] Platform:      win32
+[debug] [2019-11-20T07:49:24.211Z] Node Version:  v10.13.0
+[debug] [2019-11-20T07:49:24.212Z] Time:          Wed Nov 20 2019 13:19:24 GMT+0530 (India Standard Time)
+[debug] [2019-11-20T07:49:24.212Z] ----------------------------------------------------------------------
+[debug] [2019-11-20T07:49:24.212Z] 
+[debug] [2019-11-20T07:49:24.219Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-20T07:49:24.219Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\301Angular\BookMyMovie-POC-scalled-down
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2019-11-20T07:49:44.969Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2019-11-20T07:49:45.276Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-20T07:49:47.054Z] Error: EEXIST: file already exists, mkdir 'D:\301Angular\BookMyMovie-POC-scalled-down'
+    at Object.mkdirSync (fs.js:750:3)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:22:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:27:16)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-11-20T07:49:51.219Z] ----------------------------------------------------------------------
+[debug] [2019-11-20T07:49:51.222Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-11-20T07:49:51.222Z] CLI Version:   7.8.0
+[debug] [2019-11-20T07:49:51.222Z] Platform:      win32
+[debug] [2019-11-20T07:49:51.222Z] Node Version:  v10.13.0
+[debug] [2019-11-20T07:49:51.223Z] Time:          Wed Nov 20 2019 13:19:51 GMT+0530 (India Standard Time)
+[debug] [2019-11-20T07:49:51.224Z] ----------------------------------------------------------------------
+[debug] [2019-11-20T07:49:51.224Z] 
+[debug] [2019-11-20T07:49:51.230Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-20T07:49:51.231Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\301Angular\BookMyMovie-POC-scalled-down
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2019-11-20T07:50:09.533Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2019-11-20T07:50:09.825Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-20T07:50:11.545Z] Error: EEXIST: file already exists, mkdir 'D:\301Angular\BookMyMovie-POC-scalled-down'
+    at Object.mkdirSync (fs.js:750:3)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:22:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:27:16)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+    at mkdirsSync (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\mkdirs\mkdirs-sync.js:28:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-11-20T09:38:50.194Z] ----------------------------------------------------------------------
+[debug] [2019-11-20T09:38:50.196Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-11-20T09:38:50.196Z] CLI Version:   7.8.0
+[debug] [2019-11-20T09:38:50.197Z] Platform:      win32
+[debug] [2019-11-20T09:38:50.197Z] Node Version:  v10.13.0
+[debug] [2019-11-20T09:38:50.198Z] Time:          Wed Nov 20 2019 15:08:50 GMT+0530 (India Standard Time)
+[debug] [2019-11-20T09:38:50.198Z] ----------------------------------------------------------------------
+[debug] [2019-11-20T09:38:50.198Z] 
+[debug] [2019-11-20T09:38:50.205Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-20T09:38:50.205Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\301Angular\BookMyMovie-POC-scalled-down
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2019-11-20T09:39:11.852Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-11-20T09:39:11.852Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-11-20T09:39:11.929Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2019-11-20T09:39:11.930Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at Object.<anonymous> (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:23:32)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\login.js:8:12)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+[error] 
+[error] Error: Failed to list available Google Cloud Platform projects. See firebase-debug.log for more info.
+[debug] [2019-11-20T09:39:17.479Z] ----------------------------------------------------------------------
+[debug] [2019-11-20T09:39:17.481Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-11-20T09:39:17.481Z] CLI Version:   7.8.0
+[debug] [2019-11-20T09:39:17.481Z] Platform:      win32
+[debug] [2019-11-20T09:39:17.481Z] Node Version:  v10.13.0
+[debug] [2019-11-20T09:39:17.483Z] Time:          Wed Nov 20 2019 15:09:17 GMT+0530 (India Standard Time)
+[debug] [2019-11-20T09:39:17.483Z] ----------------------------------------------------------------------
+[debug] [2019-11-20T09:39:17.483Z] 
+[debug] [2019-11-20T09:39:17.492Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-20T09:39:17.492Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\301Angular\BookMyMovie-POC-scalled-down
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2019-11-20T09:39:25.416Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-11-20T09:39:25.417Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-11-20T09:39:25.467Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2019-11-20T09:39:25.469Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at Object.<anonymous> (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:23:32)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (C:\Users\M1047012\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\login.js:8:12)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
