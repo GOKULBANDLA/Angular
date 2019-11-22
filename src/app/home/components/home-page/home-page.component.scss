@@ -2,7 +2,6 @@
   margin-top: 25px;
   justify-content: space-around;
   align-items: space-evenly;
-  
 }
 
 .seach-movies-cards {
@@ -12,7 +11,6 @@
 
 .virtualScrollContainer {
   height: 100vh;
- 
 }
 
 .mat-tab-label-active {
@@ -25,7 +23,6 @@
 .virtual-scroll-viewport {
   height: 500px;
   width: 200%;
- 
 }
 .dropDowns {
   background-color: rgb(56, 146, 206);
@@ -70,11 +67,10 @@ app-movie-dropdowns {
   margin-left: 80%;
   background-color: rgb(48, 48, 48);
 }
-.scroll-top{
-  position: sticky;
- text-align: right;
- 
- 
-      padding-right: 15px;
-  bottom:   0;
+.scroll-top {
+  position: absolute;
+  padding-right: 10px;
+  right: 30px;
+  bottom: 50px;
+  z-index: 1000;
 }

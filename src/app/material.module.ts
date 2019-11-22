@@ -18,7 +18,7 @@ import {
 } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
 import { ScrollingModule } from '@angular/cdk/scrolling';
-
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 const materialModules = [
   MatAutocompleteModule,
   MatButtonModule,
@@ -37,7 +37,8 @@ const materialModules = [
   MatSnackBarModule,
   MatTableModule,
   MatTabsModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatProgressSpinnerModule
 ];
 
 @NgModule({

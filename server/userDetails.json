@@ -59,7 +59,7 @@
         "city": "Bangalore",
         "gLocation": "test",
         "capacity": 50,
-        "movies": [123587]
+        "movies": [637889]
       },
       {
         "tid": "1",
@@ -67,7 +67,7 @@
         "city": "s",
         "gLocation": "g",
         "capacity": 100,
-        "movies": [123587]
+        "movies": [637889]
       },
       {
         "tid": "1234",
@@ -75,7 +75,7 @@
         "city": "Bangalore",
         "gLocation": "40.741895,-73.989308",
         "capacity": 50,
-        "movies": [123587]
+        "movies": [637889]
       }
     ]
   }

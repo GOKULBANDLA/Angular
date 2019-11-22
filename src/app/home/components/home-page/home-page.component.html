@@ -12,7 +12,7 @@
         <ng-template matTabContent class="movieList">
           
           <div class="cards-container" fxLayout="row wrap" fxLayoutAlign="space-evenly center" fxLayoutGap="2%">
-            <cdk-virtual-scroll-viewport itemSize="201" class="virtual-scroll-viewport" minBufferPx="1815" maxBufferPx="5445"
+            <cdk-virtual-scroll-viewport itemSize="201" class="virtual-scroll-viewport" minBufferPx="{{175*2}}" maxBufferPx="{{175*2*2}}"
             (scrolledIndexChange)="getMovies($event)" >
                   <ng-container *cdkVirtualFor="let movie of moviesList | homeFilter:selectedGenre:selectedLanguage;trackBy:trackMovie"  >
                     <app-movie-card class=" seach-movies-cards" [movie]="movie" [theaterList]="theaterList"
@@ -55,6 +55,6 @@
   <app-movie-dropdowns [languageList]="languageList" (languageChange$)="getLanguage($event)"
     (genreChange$)="getGenre($event)" [layout]=" 'column' "></app-movie-dropdowns>
 </mat-menu>
-<div class="scroll-top" (click)="goTop()">
-  <button mat-mini-fab title="Go To Top"><mat-icon>arrow_upward</mat-icon></button>
+<div class="scroll-top" >
+  <button mat-mini-fab (click)="goTop()" title="Go To Top"><mat-icon>arrow_upward</mat-icon></button>
 </div>

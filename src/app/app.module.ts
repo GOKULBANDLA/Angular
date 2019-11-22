@@ -42,7 +42,8 @@ import { GlobalErrorHandler } from './shared/Services/Global/global-error-handle
     MaterialModule,
     CoreModule,
     AdminModule,
-    SharedModule
+    SharedModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [ { provide: HTTP_INTERCEPTORS, useClass: GlobalInterceptor, multi: true },
     { provide: ErrorHandler, useClass: GlobalErrorHandler }, ] ,
