@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, OnDestroy } from '@angular/core';
 import { AdminService } from '../../services/admin.service';
 import { Store, State } from '@ngrx/store';
 import * as MovieState from '../../../reducers/index';
@@ -9,17 +9,21 @@ import * as MovieState from '../../../reducers/index';
   styleUrls: ['./admin.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AdminComponent implements OnInit {
+export class AdminComponent implements OnInit,OnDestroy {
   theaterList;
+  subscription: any;
   constructor(private adminService: AdminService, private store: Store<MovieState.State>) {}
 
   ngOnInit() {
-    this.store.select(MovieState.theaterList).subscribe(result => {
+    this.subscription = this.store.select(MovieState.theaterList).subscribe(result => {
       this.theaterList = Object.values(result);
     });
   }
 
   addTheater(formData) {
     this.adminService.newTheater(formData);
+  }
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }

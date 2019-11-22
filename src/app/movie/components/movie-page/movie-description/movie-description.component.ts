@@ -4,7 +4,6 @@ import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core
   selector: 'app-movie-description',
   templateUrl: './movie-description.component.html',
   styleUrls: ['./movie-description.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MovieDescriptionComponent implements OnInit {
 

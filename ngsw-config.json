@@ -11,27 +11,22 @@
     {
       "name": "assets",
       "installMode": "lazy",
-      "updateMode": "prefetch",
+      "updateMode": "freshness",
       "resources": {
-        "files": ["/assets/**"]
+        "files": ["/assets/**"],
+        "urls": ["https://api.themoviedb.org/**", "https://image.tmdb.org/**"]
       }
     }
   ],
   "dataGroups": [
     {
-      "name": "movie",
-      "urls": [
-        "https://api.themoviedb.org/3/*",
-        "/assets/i18n/**",
-        "/api/**",
-        "http://localhost:3000/*",
-        "https://image.tmdb.org/*"
-      ],
+      "name": "from-api",
+      "urls": ["/3/movie/now_playing/**", "3/genre/movie/list", "3/movie/474350/credits"],
       "cacheConfig": {
+        "strategy": "performance",
         "maxSize": 15,
-        "maxAge": "12h",
-        "timeout": "10s",
-        "strategy": "freshness"
+        "maxAge": "1h",
+        "timeout": "1s"
       }
     }
   ]

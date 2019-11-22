@@ -16,7 +16,7 @@ import { CdkVirtualScrollViewport, ScrollDispatcher } from '@angular/cdk/scrolli
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
- // changeDetection: ChangeDetectionStrategy.OnPush
+ changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomePageComponent implements OnInit {
   @Input()

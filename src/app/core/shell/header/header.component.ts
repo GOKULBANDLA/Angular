@@ -1,5 +1,5 @@
 import { User } from 'src/app/core/models/user.model';
-import { Component, OnInit, ViewChild, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog, MatInput } from '@angular/material';
 import { GoogleLoginProvider } from 'angular-6-social-login';
 import { AuthService } from 'angular-6-social-login';
@@ -15,7 +15,7 @@ import { UiService } from '../../../shared/ui-service.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
   @ViewChild('searchInput') input: MatInput;
@@ -47,6 +47,7 @@ export class HeaderComponent implements OnInit {
           let userDetails;
 
           for (const user of data.users) {
+            this.signUpFlag = false;
             if (user.uid === userData.id) {
               this.signUpFlag = true;
               userDetails = {
@@ -79,7 +80,7 @@ export class HeaderComponent implements OnInit {
         });
       })
       .catch(err => {
-        this.uiService.showMessage('Oh gosh, SOMETHING WENT WRONG !!!!', '', 3000);
+        // this.uiService.showMessage('Oh gosh, SOMETHING WENT WRONG !!!!', '', 3000);
       });
   }
 

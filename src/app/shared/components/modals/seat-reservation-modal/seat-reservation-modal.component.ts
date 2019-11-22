@@ -36,7 +36,6 @@ export class SeatReservationModalComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: any,
     private router: Router
   ) {
-    console.log('data---', data);
   }
 
   ngOnInit() {
@@ -71,7 +70,6 @@ export class SeatReservationModalComponent implements OnInit {
 
   // click handler
   seatClicked(seatPos: string) {
-    console.log('test', seatPos);
     const index = this.selected.indexOf(seatPos);
     if (index !== -1) {
       // seat already selected, remove

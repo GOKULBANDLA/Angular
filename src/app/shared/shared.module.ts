@@ -18,9 +18,10 @@ import { UiService } from './ui-service.service';
 import { MovieDropdownsComponent } from './movie-dropdowns/movie-dropdowns.component';
 import { ConfirmationModalComponent } from './components/modals/confirmation-modal/confirmation-modal.component';
 import { PaymentBookingComponent } from './components/payment-booking/payment-booking.component';
-import { SortMoviePipe } from './pipes/sort-movie.pipe';
 import { HomeFilterPipe } from './pipes/home-filter.pipe';
 import { PreBookingComponent } from './components/modals/pre-booking/pre-booking.component';
+import { SortMoviePipe } from './pipes/sort-movie.pipe';
+import { SortNamePipe } from './pipes/sort-name.pipe';
 @NgModule({
   declarations: [
     MovieBookingComponent,
@@ -29,6 +30,7 @@ import { PreBookingComponent } from './components/modals/pre-booking/pre-booking
     ConfirmationModalComponent,
     PaymentBookingComponent,
     SortMoviePipe,
+    SortNamePipe,
     HomeFilterPipe,
     PreBookingComponent
   ],
@@ -49,6 +51,7 @@ import { PreBookingComponent } from './components/modals/pre-booking/pre-booking
     MovieDropdownsComponent,
     SortMoviePipe,
     HomeFilterPipe,
+    SortNamePipe,
     PreBookingComponent
   ],
   providers: [{ provide: MatDialogRef, useValue: {} }, { provide: MAT_DIALOG_DATA, useValue: [] }],

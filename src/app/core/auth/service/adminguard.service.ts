@@ -8,6 +8,7 @@ import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
 import * as UserState from '../../../../app/reducers/index';
 import { User } from 'src/app/core/models/user.model';
+import { LogService } from 'src/app/shared/Services/Global/log.service';
 
 @Injectable({
   providedIn: 'root'
@@ -16,14 +17,16 @@ export class AdminguardService implements CanActivate {
 
   userDetails: User;
   constructor(
+    private logger: LogService,
     private router: Router,
     private store: Store<UserState.State>
-  ) { }
+  ) {
+  }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     this.store.select(UserState.userSelector).subscribe(result => {
       this.userDetails = result;
-      console.log('userDetails auth check', this.userDetails);
+      this.logger.info('userDetails auth check', this.userDetails);
     });
     const authValid = this.userDetails;
     if (authValid && authValid.id !== '' && authValid.role === 'Admin') {

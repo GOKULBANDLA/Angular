@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, ChangeDetectionStrategy, OnDestroy } from '@angular/core';
 import { MatDialog } from '@angular/material';
 
 import { FormControl } from '@angular/forms';
@@ -11,8 +11,9 @@ import { SeatReservationModalComponent } from 'src/app/shared/components/modals/
   selector: 'app-movie-card',
   templateUrl: './movie-card.component.html',
   styleUrls: ['./movie-card.component.scss'],
+  //changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class MovieCardComponent implements OnInit, OnChanges {
+export class MovieCardComponent implements OnInit, OnChanges,OnDestroy {
   @Input()
   movie;
   @Input()
@@ -32,7 +33,7 @@ export class MovieCardComponent implements OnInit, OnChanges {
   selectTheater: FormControl;
   selectedTheater;
   selectedTime;
-
+  subscription:any;
   constructor(public dialog: MatDialog) {}
 
   ngOnInit() {}
@@ -41,7 +42,7 @@ export class MovieCardComponent implements OnInit, OnChanges {
     this.selectTheater = new FormControl();
     this.selectTheater.setValue(this.theaterList[0]);
     this.selectedTheater = this.theaterList[0];
-    this.selectTheater.valueChanges.subscribe(selectedTheater => {
+    this.subscription = this.selectTheater.valueChanges.subscribe(selectedTheater => {
       this.selectedTheater = selectedTheater;
     });
   }
@@ -78,8 +79,6 @@ export class MovieCardComponent implements OnInit, OnChanges {
     bookingInstance.time = this.selectedTime;
     bookingInstance.movieList = this.movie;
     dialogRef.afterClosed().subscribe(result => {
-      // console.log(`Dialog closed: ${result}`);
-      //  this.dialogResult = result;
     });
   }
 
@@ -96,5 +95,8 @@ export class MovieCardComponent implements OnInit, OnChanges {
     } else {
       return -1;
     }
+  }
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }

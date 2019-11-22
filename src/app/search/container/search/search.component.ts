@@ -18,8 +18,8 @@ export class SearchComponent implements OnInit {
 
   openSearchPage(): void {
     const dialogRef = this.dialog.open(SDialogComponent, {
-      width: '100vw',
-      maxWidth: '100vw',
+      width: '101vw',
+      maxWidth: '101vw',
       height: '100vh',
       maxHeight: '100vh'
     });

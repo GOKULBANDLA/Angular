@@ -32,7 +32,6 @@ export class ChangeShowComponent implements OnInit {
        this.adminService.searchMovie(value).subscribe(x=>{
         this.movieResult = x;
        })
-        console.log(this.movieResult)
       }
     });
     this.selectTheater.valueChanges.subscribe(value => {

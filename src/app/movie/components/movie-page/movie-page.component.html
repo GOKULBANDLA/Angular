@@ -2,7 +2,7 @@
   <div fxLayout="  wrap" class="firstRow" fxLayoutGap="3%" fxLayoutAlign="center start">
     <div class="imageContainer" fxLayout="column" fxLayoutAlign="center center">
       <img src="{{imagesPath}}{{movieDescription.poster_path}}" class="poster"
-      onerror="this.src='/assets/images/noImage.jpg';" alt="movie description poster">
+        onerror="this.src='/assets/images/noImage.jpg';" alt="movie description poster">
     </div>
     <div fxLayout="column" class="centerCol">
       <app-movie-description [overview]="movieDescription.overview" [title]="movieDescription.title">
@@ -64,7 +64,7 @@
         <div *ngFor="let cast of movieDescription.casts | slice:0:2;trackBy:trackCastandCrew">
           <mat-card>
             <img src="{{castCrew}}{{cast.profile_path}}" title="{{cast.name}} / {{cast.job}}"
-            onerror="this.src='/assets/images/noImage.jpg'" alt="cast profile photo">
+              onerror="this.src='/assets/images/noImage.jpg'" alt="cast profile photo">
             <mat-card-content>
               <p>
                 {{cast.name}}
@@ -78,7 +78,7 @@
         <div *ngFor="let crew of movieDescription.crews | slice:0:2;trackBy:trackCastandCrew">
           <mat-card>
             <img src="{{castCrew}}{{crew.profile_path}}" title="{{crew.name}} / {{crew.job}}"
-            onerror="this.src='/assets/images/noImage.jpg'" alt="crew profile photo">
+              onerror="this.src='/assets/images/noImage.jpg'" alt="crew profile photo">
             <mat-card-content>
               <p>
                 {{crew.name}}
@@ -97,7 +97,7 @@
         <div *ngFor="let cast of movieDescription.casts;trackBy:trackCastandCrew">
           <mat-card>
             <img src="{{castCrew}}{{cast.profile_path}}" title="{{cast.name}} / {{cast.job}}"
-            onerror="this.src='/assets/images/noImage.jpg'" alt="cast profile photo">
+              onerror="this.src='/assets/images/noImage.jpg'" alt="cast profile photo">
             <mat-card-content>
               <p>
                 {{cast.name}}
@@ -116,7 +116,7 @@
         <div *ngFor="let crew of movieDescription.crews ;trackBy:trackCastandCrew">
           <mat-card>
             <img src="{{castCrew}}{{crew.profile_path}}" title="{{crew.name}} / {{crew.job}}"
-            onerror="this.src='/assets/images/noImage.jpg'" alt="crew profile photo">
+              onerror="this.src='/assets/images/noImage.jpg'" alt="crew profile photo">
             <mat-card-content>
               <p>
                 {{crew.name}}

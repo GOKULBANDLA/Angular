@@ -9,6 +9,8 @@ import { AuthService } from 'angular-6-social-login';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SocialLoginModule, AuthServiceConfig, GoogleLoginProvider } from 'angular-6-social-login';
 import { SignInService } from '../core/shell/header/service/signin.service';
+import { LoaderComponent } from './loader/loader.component';
+import { LoaderService } from './loader.service';
 
 export function getAuthServiceConfigs() {
   const config = new AuthServiceConfig([
@@ -21,7 +23,7 @@ export function getAuthServiceConfigs() {
 }
 
 @NgModule({
-  declarations: [ShellComponent, HeaderComponent],
+  declarations: [ShellComponent, HeaderComponent, LoaderComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     CommonModule,
@@ -35,8 +37,8 @@ export function getAuthServiceConfigs() {
       useFactory: getAuthServiceConfigs
     },
     SignInService,
-    AuthService
+    AuthService,LoaderService
   ],
-  exports: [MaterialModule, HeaderComponent]
+  exports: [MaterialModule, HeaderComponent,LoaderComponent]
 })
 export class CoreModule { }

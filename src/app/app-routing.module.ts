@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { ProfileComponent } from 'src/app/profile/profile.component';
 import { PaymentBookingComponent } from './shared/components/payment-booking/payment-booking.component';
 import { AuthGuard } from './core/auth/service/authguard.service';
@@ -18,7 +18,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: false })],
+  imports: [RouterModule.forRoot(routes, { useHash: true , preloadingStrategy: PreloadAllModules})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

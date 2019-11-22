@@ -9,8 +9,6 @@ import { MovieService } from '../../services/movie.service';
   selector: 'app-movie',
   templateUrl: './movie.component.html',
   styleUrls: ['./movie.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
-
 })
 export class MovieComponent implements OnInit, AfterContentInit {
   movieDetails: any;

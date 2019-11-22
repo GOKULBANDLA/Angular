@@ -55,7 +55,6 @@ export class HomeFilterPipe implements PipeTransform {
               filteredMovieList.push(movie);
             }
           }
-          console.log(filteredMovieList);
           return this.RemoveDuplicates(filteredMovieList);
       }
     }

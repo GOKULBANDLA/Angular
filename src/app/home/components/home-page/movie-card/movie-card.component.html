@@ -49,7 +49,7 @@
     <button mat-raised-button color="primary" (click)="checKToDialog()" [disabled]="isInvalid()">
       {{ category === 'nowPlaying' ? 'BOOK' : 'PRE-BOOK' }}
     </button>
-    <a mat-button class="forwardlink" [routerLink]="['/movie', category, movie.id]"
+    <a mat-button class="forwardlink" aria-hidden="true" [routerLink]="['/movie', category, movie.id]"
       routerLinkActive="router-link-active" name="movieDescriptionLink">
       <mat-icon>arrow_forward</mat-icon>
     </a>

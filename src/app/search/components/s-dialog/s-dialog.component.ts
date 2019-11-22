@@ -31,7 +31,7 @@ export class SDialogComponent implements OnInit, OnDestroy {
   selectedGenre: any;
   selectedLanguage = 'en';
   languageList: any;
-
+  movieSortObj = 'NO';
   movieFilterObj = {
     filter: 'genre',
     value: ''
@@ -54,8 +54,6 @@ export class SDialogComponent implements OnInit, OnDestroy {
       this.originalMovieList = result;
       this.moviesList = result;
       this.movieObjArray = this.movieListService.getLanguageList(this.moviesList); // get movies with languages
-      // console.log(this.movieObjArray);
-      // this.movieObjArray = this.segregateMovies.getSortedbyLanguage(this.languageList, this.moviesList);
     });
 
     // genre list from service
@@ -72,8 +70,6 @@ export class SDialogComponent implements OnInit, OnDestroy {
         error => {
           this.moviesList = this.searchService.searchMovieFromStore(this.originalMovieList, searchString);
           this.movieObjArray = this.movieListService.getLanguageList(this.moviesList); // get Languages
-          // console.log('error', this.movieObjArray);
-          // this.movieObjArray = this.segregateMovies.getSortedbyLanguage(this.languageList, this.moviesList);
         }
       );
     });
@@ -85,9 +81,20 @@ export class SDialogComponent implements OnInit, OnDestroy {
     this.movieFilterObj.value = this.selectedGenre;
     this.movieFilterObj = Object.assign({}, this.movieFilterObj);
   }
+  sortList() {
+    switch (this.movieSortObj) {
+      case 'Asc':
+        this.movieSortObj = 'Desc';
+        break;
+        case 'Desc':
+            this.movieSortObj = 'Asc';
+        break;
+        default:
+          this.movieSortObj = 'Asc';
+    }
+  }
 
   ngOnDestroy(): void {
-    // console.log('destroy');
     this.moviesList = [];
   }
 }

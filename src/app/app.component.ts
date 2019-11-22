@@ -11,6 +11,7 @@ import { UserDetailService } from 'src/app/core/services/userDetails.service';
 })
 export class AppComponent implements OnInit {
   title = 'book-my-movie';
+  show:boolean=false;
   constructor(private swUpdate: SwUpdate, private snackBar: MatSnackBar,
     private userDetailsService: UserDetailService,
     private homeService: HomeService) { }

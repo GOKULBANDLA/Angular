@@ -1,13 +1,13 @@
 import { ErrorHandler, Injectable, Injector } from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
 import { ErrorService } from './error.service';
-import { LoggingService } from './log.service';
+import {  LogService } from './log.service';
 
 @Injectable()
 export class GlobalErrorHandler implements ErrorHandler {
   // Error handling is important and needs to be loaded first.
   // Because of this we should manually inject the services with Injector.
-  constructor(private injector: Injector,private logservice:LoggingService) {}
+  constructor(private injector: Injector, private logger: LogService) {}
 
   handleError(error: Error | HttpErrorResponse) {
     const errorService = this.injector.get(ErrorService);
@@ -25,7 +25,7 @@ export class GlobalErrorHandler implements ErrorHandler {
       stackTrace = errorService.getClientStack(error);
     }
 
-    this.logservice.logError(message, stackTrace);
+    this.logger.log(message, stackTrace);
 
   }
 }
