@@ -63,7 +63,6 @@ export class HomeService {
   }
 
   getGenres() {
-    console.log('geners', this.genres);
     return this.genres;
   }
 

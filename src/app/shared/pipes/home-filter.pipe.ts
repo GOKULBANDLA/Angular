@@ -34,7 +34,7 @@ export class HomeFilterPipe implements PipeTransform {
               filteredMovieList.push(movie);
             }
           }
-          return filteredMovieList;
+          this.RemoveDuplicates(filteredMovieList);
         case 3:
           for (const movie of movieList) {
             if (
@@ -44,7 +44,7 @@ export class HomeFilterPipe implements PipeTransform {
               filteredMovieList.push(movie);
             }
           }
-          return filteredMovieList;
+          this.RemoveDuplicates(filteredMovieList);
         case 4:
           for (const movie of movieList) {
             if (
@@ -55,8 +55,16 @@ export class HomeFilterPipe implements PipeTransform {
               filteredMovieList.push(movie);
             }
           }
-          return filteredMovieList;
+          console.log(filteredMovieList);
+          return this.RemoveDuplicates(filteredMovieList);
       }
     }
+  }
+  RemoveDuplicates(filteredMovieList):any {
+    var filteredBooks = Array.from(new Set(filteredMovieList.map(a => a.id)))
+    .map(id => {
+      return filteredMovieList.find(a => a.id === id)
+    })
+ return filteredBooks;
   }
 }

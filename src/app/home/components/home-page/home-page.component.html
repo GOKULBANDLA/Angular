@@ -1,6 +1,6 @@
 <div fxLayout="column" fxLayoutGap="3%">
   <div class="dropDowns">
-    <app-movie-dropdowns homeFilter [languageList]="languageList" (languageChange$)="getLanguage($event)"
+    <app-movie-dropdowns  [languageList]="languageList" (languageChange$)="getLanguage($event)"
       (genreChange$)="getGenre($event)" [layout]=" 'row' " fxHide.xs="true"></app-movie-dropdowns>
     <button mat-button [matMenuTriggerFor]="filter" fxHide.xs="false" fxHide.gt-xs="true" class="filter" name="filter">
       <mat-icon>filter_list</mat-icon>
