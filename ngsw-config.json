@@ -1,0 +1,33 @@
+{
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": ["/favicon.ico", "/index.html", "/*.css", "/*.js"]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "freshness",
+      "resources": {
+        "files": ["/assets/**"],
+        "urls": ["https://api.themoviedb.org/**", "https://image.tmdb.org/**"]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "from-api",
+      "urls": ["/3/movie/now_playing/**", "3/genre/movie/list", "3/movie/474350/credits"],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 15,
+        "maxAge": "1h",
+        "timeout": "1s"
+      }
+    }
+  ]
+}

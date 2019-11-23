@@ -1,0 +1,1382 @@
+{
+  "userDetails": {
+    "users": [
+      {
+        "uid": "101590852450539536978",
+        "name": "Punith Gowda N",
+        "image": "https://lh3.googleusercontent.com/a-/AAuE7mDVwHhauttwavwJycmv7PhK-GrdSwoCKLSytD21=s96-c",
+        "email": "hi@punith.me",
+        "role": "Admin",
+        "preferences": {
+          "lang": "en",
+          "generes": [],
+          "theaters": []
+        },
+        "ratings": {
+          "movieId": "",
+          "rating": ""
+        }
+      },
+      {
+        "uid": "112011073371985625063",
+        "name": "Punith N Gowda",
+        "image": "https://lh5.googleusercontent.com/-Qdhc-F8StnI/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3reuBr3hmoKh0QhCkQVkGDafyxpxuA/s96-c/photo.jpg",
+        "email": "punithgowdanpg@gmail.com",
+        "role": "Admin",
+        "preferences": {
+          "lang": "en",
+          "generes": "28",
+          "theaters": "Kapali"
+        },
+        "ratings": {
+          "movieId": "",
+          "rating": ""
+        }
+      },
+      {
+        "uid": "101089382854581866257",
+        "name": "GAGAN GOKUL",
+        "image": "https://lh3.googleusercontent.com/a-/AAuE7mB47izBCrB4LV0FgRzEN2uK2UC1q12na_WeHRcOLw=s96-c",
+        "email": "gagangokul1997@gmail.com",
+        "role": "Admin",
+        "preferences": {
+          "lang": "hi",
+          "generes": "16",
+          "theaters": "q"
+        },
+        "ratings": {
+          "movieId": "",
+          "rating": ""
+        }
+      }
+    ]
+  },
+  "theater": {
+    "theaters": [
+      {
+        "tid": "1",
+        "name": "Kapali",
+        "city": "Bangalore",
+        "gLocation": "test",
+        "capacity": 50,
+        "movies": [
+          366080
+        ]
+      },
+      {
+        "tid": "1",
+        "name": "q",
+        "city": "s",
+        "gLocation": "g",
+        "capacity": 100,
+        "movies": [
+          366080
+        ]
+      },
+      {
+        "tid": "1234",
+        "name": "Local",
+        "city": "Bangalore",
+        "gLocation": "40.741895,-73.989308",
+        "capacity": 50,
+        "movies": [
+          366080
+        ]
+      }
+    ]
+  },
+  "logs": [
+    {
+      "entryDate": "2019-11-23T09:49:43.155Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/theater"
+      ],
+      "logWithDate": true,
+      "id": 1
+    },
+    {
+      "entryDate": "2019-11-23T09:49:43.187Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/now_playing?api_key=c4f351490cb39722773a30b3347f2e0d&page=1"
+      ],
+      "logWithDate": true,
+      "id": 2
+    },
+    {
+      "entryDate": "2019-11-23T09:49:43.166Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/genre/movie/list?api_key=c4f351490cb39722773a30b3347f2e0d&language=en-US"
+      ],
+      "logWithDate": true,
+      "id": 3
+    },
+    {
+      "entryDate": "2019-11-23T09:49:43.166Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/genre/movie/list?api_key=c4f351490cb39722773a30b3347f2e0d&language=en-US"
+      ],
+      "logWithDate": true,
+      "id": 4
+    },
+    {
+      "entryDate": "2019-11-23T09:49:44.299Z",
+      "message": "JSON server is not running",
+      "level": 0,
+      "extraInfo": [
+        ""
+      ],
+      "logWithDate": true,
+      "id": 5
+    },
+    {
+      "entryDate": "2019-11-23T09:49:44.305Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/upcoming?api_key=c4f351490cb39722773a30b3347f2e0d&page=1"
+      ],
+      "logWithDate": true,
+      "id": 6
+    },
+    {
+      "entryDate": "2019-11-23T09:49:44.315Z",
+      "level": 0,
+      "extraInfo": [
+        null
+      ],
+      "logWithDate": true,
+      "id": 7
+    },
+    {
+      "entryDate": "2019-11-23T09:49:45.064Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/501170/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 8
+    },
+    {
+      "entryDate": "2019-11-23T09:49:45.069Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/420809/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 9
+    },
+    {
+      "entryDate": "2019-11-23T09:49:45.074Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/480105/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 10
+    },
+    {
+      "entryDate": "2019-11-23T09:49:45.083Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/496243/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 11
+    },
+    {
+      "entryDate": "2019-11-23T09:49:45.088Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/501907/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 12
+    },
+    {
+      "entryDate": "2019-11-23T09:49:45.094Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/513409/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 13
+    },
+    {
+      "entryDate": "2019-11-23T09:49:45.102Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/540901/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 14
+    },
+    {
+      "entryDate": "2019-11-23T09:49:45.109Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/398978/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 15
+    },
+    {
+      "entryDate": "2019-11-23T09:49:45.113Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/567609/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 16
+    },
+    {
+      "entryDate": "2019-11-23T09:49:45.120Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/511987/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 17
+    },
+    {
+      "entryDate": "2019-11-23T09:50:16.653Z",
+      "message": "JSON server is not running",
+      "level": 0,
+      "extraInfo": [
+        ""
+      ],
+      "logWithDate": true,
+      "id": 18
+    },
+    {
+      "entryDate": "2019-11-23T09:51:20.591Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/theater"
+      ],
+      "logWithDate": true,
+      "id": 19
+    },
+    {
+      "entryDate": "2019-11-23T09:51:20.599Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/genre/movie/list?api_key=c4f351490cb39722773a30b3347f2e0d&language=en-US"
+      ],
+      "logWithDate": true,
+      "id": 20
+    },
+    {
+      "entryDate": "2019-11-23T09:51:20.628Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/now_playing?api_key=c4f351490cb39722773a30b3347f2e0d&page=1"
+      ],
+      "logWithDate": true,
+      "id": 21
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.070Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 22
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.075Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 23
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.135Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 24
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.156Z",
+      "message": "JSON server is not running",
+      "level": 0,
+      "extraInfo": [
+        ""
+      ],
+      "logWithDate": true,
+      "id": 25
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.160Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/upcoming?api_key=c4f351490cb39722773a30b3347f2e0d&page=1"
+      ],
+      "logWithDate": true,
+      "id": 26
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.247Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 27
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.266Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 28
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.287Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/568012/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 29
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.315Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/508965/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 30
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.300Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/359724/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 31
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.325Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/559969/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 32
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.341Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/501170/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 33
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.349Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/420809/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 34
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.365Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/480105/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 35
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.372Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/496243/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 36
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.382Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/501907/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 37
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.448Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 38
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.734Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 39
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.740Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 40
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.806Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/330457/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 41
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.824Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/453405/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 42
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.814Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/290859/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 43
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.847Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/474350/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 44
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.841Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/423204/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 45
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.857Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/458897/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 46
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.868Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/568012/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 47
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.877Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/359724/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 48
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.882Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/508965/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 49
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.888Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/559969/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 50
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.895Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/501170/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 51
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.900Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/420809/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 52
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.906Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/480105/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 53
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.912Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/496243/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 54
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.918Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/501907/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 55
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.924Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/513409/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 56
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.938Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/398978/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 57
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.946Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/567609/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 58
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.929Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/540901/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 59
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.951Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/511987/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 60
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.423Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/511987/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 61
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.409Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/398978/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 62
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.403Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/540901/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 63
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.391Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/513409/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 64
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.417Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/567609/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 65
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.877Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/359724/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 66
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.888Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/559969/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 67
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.900Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/420809/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 68
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.868Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/568012/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 69
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.882Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/508965/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 70
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.895Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/501170/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 71
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.277Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/458897/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 72
+    },
+    {
+      "entryDate": "2019-11-23T09:51:26.984Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 73
+    },
+    {
+      "entryDate": "2019-11-23T09:51:26.999Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 74
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.173Z",
+      "level": 0,
+      "extraInfo": [
+        null
+      ],
+      "logWithDate": true,
+      "id": 75
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.197Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/290859/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 76
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.205Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/453405/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 77
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.214Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/423204/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 78
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.224Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/474350/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 79
+    },
+    {
+      "entryDate": "2019-11-23T09:51:25.794Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 80
+    },
+    {
+      "entryDate": "2019-11-23T09:51:27.312Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 81
+    },
+    {
+      "entryDate": "2019-11-23T09:51:26.122Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 82
+    },
+    {
+      "entryDate": "2019-11-23T09:51:27.321Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 83
+    },
+    {
+      "entryDate": "2019-11-23T09:51:27.329Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 84
+    },
+    {
+      "entryDate": "2019-11-23T09:51:27.339Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 85
+    },
+    {
+      "entryDate": "2019-11-23T09:51:26.160Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 86
+    },
+    {
+      "entryDate": "2019-11-23T09:51:26.141Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 87
+    },
+    {
+      "entryDate": "2019-11-23T09:51:26.152Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 88
+    },
+    {
+      "entryDate": "2019-11-23T09:51:27.368Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 89
+    },
+    {
+      "entryDate": "2019-11-23T09:51:26.174Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 90
+    },
+    {
+      "entryDate": "2019-11-23T09:51:21.442Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/now_playing?api_key=c4f351490cb39722773a30b3347f2e0d&page=1"
+      ],
+      "logWithDate": true,
+      "id": 91
+    },
+    {
+      "entryDate": "2019-11-23T09:51:26.510Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 92
+    },
+    {
+      "entryDate": "2019-11-23T09:51:26.525Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 93
+    },
+    {
+      "entryDate": "2019-11-23T09:51:57.328Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 94
+    },
+    {
+      "entryDate": "2019-11-23T09:51:32.540Z",
+      "message": "JSON server is not running",
+      "level": 0,
+      "extraInfo": [
+        ""
+      ],
+      "logWithDate": true,
+      "id": 95
+    },
+    {
+      "entryDate": "2019-11-23T09:51:57.336Z",
+      "level": 0,
+      "extraInfo": [
+        null
+      ],
+      "logWithDate": true,
+      "id": 96
+    },
+    {
+      "entryDate": "2019-11-23T09:51:32.548Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 97
+    },
+    {
+      "entryDate": "2019-11-23T09:51:32.556Z",
+      "level": 0,
+      "extraInfo": [
+        null
+      ],
+      "logWithDate": true,
+      "id": 98
+    },
+    {
+      "entryDate": "2019-11-23T09:51:57.344Z",
+      "message": "JSON server is not running",
+      "level": 0,
+      "extraInfo": [
+        ""
+      ],
+      "logWithDate": true,
+      "id": 99
+    },
+    {
+      "entryDate": "2019-11-23T09:51:57.348Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 100
+    },
+    {
+      "entryDate": "2019-11-23T09:51:57.355Z",
+      "level": 0,
+      "extraInfo": [
+        null
+      ],
+      "logWithDate": true,
+      "id": 101
+    },
+    {
+      "entryDate": "2019-11-23T09:51:57.360Z",
+      "message": "JSON server is not running",
+      "level": 0,
+      "extraInfo": [
+        ""
+      ],
+      "logWithDate": true,
+      "id": 102
+    },
+    {
+      "entryDate": "2019-11-23T09:51:57.365Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 103
+    },
+    {
+      "entryDate": "2019-11-23T09:51:57.372Z",
+      "level": 0,
+      "extraInfo": [
+        null
+      ],
+      "logWithDate": true,
+      "id": 104
+    },
+    {
+      "entryDate": "2019-11-23T09:51:57.414Z",
+      "message": "JSON server is not running",
+      "level": 0,
+      "extraInfo": [
+        ""
+      ],
+      "logWithDate": true,
+      "id": 105
+    },
+    {
+      "entryDate": "2019-11-23T09:51:57.423Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 106
+    },
+    {
+      "entryDate": "2019-11-23T09:51:57.445Z",
+      "level": 0,
+      "extraInfo": [
+        null
+      ],
+      "logWithDate": true,
+      "id": 107
+    },
+    {
+      "entryDate": "2019-11-23T09:51:57.453Z",
+      "message": "JSON server is not running",
+      "level": 0,
+      "extraInfo": [
+        ""
+      ],
+      "logWithDate": true,
+      "id": 108
+    },
+    {
+      "entryDate": "2019-11-23T09:51:57.458Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 109
+    },
+    {
+      "entryDate": "2019-11-23T09:51:57.463Z",
+      "level": 0,
+      "extraInfo": [
+        null
+      ],
+      "logWithDate": true,
+      "id": 110
+    },
+    {
+      "entryDate": "2019-11-23T09:51:57.467Z",
+      "message": "JSON server is not running",
+      "level": 0,
+      "extraInfo": [
+        ""
+      ],
+      "logWithDate": true,
+      "id": 111
+    },
+    {
+      "entryDate": "2019-11-23T09:53:50.375Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/genre/movie/list?api_key=c4f351490cb39722773a30b3347f2e0d&language=en-US"
+      ],
+      "logWithDate": true,
+      "id": 112
+    },
+    {
+      "entryDate": "2019-11-23T09:53:50.426Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/now_playing?api_key=c4f351490cb39722773a30b3347f2e0d&page=1"
+      ],
+      "logWithDate": true,
+      "id": 113
+    },
+    {
+      "entryDate": "2019-11-23T09:53:51.051Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/330457/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 114
+    },
+    {
+      "entryDate": "2019-11-23T09:53:51.070Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/290859/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 115
+    },
+    {
+      "entryDate": "2019-11-23T09:53:51.081Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/453405/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 116
+    },
+    {
+      "entryDate": "2019-11-23T09:53:51.093Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/423204/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 117
+    },
+    {
+      "entryDate": "2019-11-23T09:53:51.115Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/458897/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 118
+    },
+    {
+      "entryDate": "2019-11-23T09:53:51.125Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/568012/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 119
+    },
+    {
+      "entryDate": "2019-11-23T09:53:51.227Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/now_playing?api_key=c4f351490cb39722773a30b3347f2e0d&page=1"
+      ],
+      "logWithDate": true,
+      "id": 120
+    },
+    {
+      "entryDate": "2019-11-23T09:53:50.860Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/559969/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 121
+    },
+    {
+      "entryDate": "2019-11-23T09:53:50.868Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/501170/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 122
+    },
+    {
+      "entryDate": "2019-11-23T09:53:50.903Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/501907/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 123
+    },
+    {
+      "entryDate": "2019-11-23T09:53:50.911Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/513409/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 124
+    },
+    {
+      "entryDate": "2019-11-23T09:53:50.928Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/540901/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 125
+    },
+    {
+      "entryDate": "2019-11-23T09:53:50.947Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/567609/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 126
+    },
+    {
+      "entryDate": "2019-11-23T09:53:50.958Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "https://api.themoviedb.org/3/movie/511987/credits?api_key=c4f351490cb39722773a30b3347f2e0d"
+      ],
+      "logWithDate": true,
+      "id": 127
+    },
+    {
+      "entryDate": "2019-11-23T09:53:50.969Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/theater"
+      ],
+      "logWithDate": true,
+      "id": 128
+    },
+    {
+      "entryDate": "2019-11-23T09:53:51.279Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 129
+    },
+    {
+      "entryDate": "2019-11-23T09:53:51.288Z",
+      "message": "called service",
+      "level": 0,
+      "extraInfo": [
+        "http://localhost:3000/logs"
+      ],
+      "logWithDate": true,
+      "id": 130
+    }
+  ]
+}
