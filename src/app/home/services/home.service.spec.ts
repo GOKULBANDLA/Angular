@@ -6,13 +6,20 @@ import { environment } from '../../../environments/environment';
 
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { LogService } from 'src/app/shared/Services/Global/log.service';
+import { Store } from '@ngrx/store';
+import { of } from 'rxjs';
 const nowPlayingMoviesUrl = BASE_URL.TMDB_API + TMDB_URLS.NOW_PLAYING_MOVIES + environment.API_KEY + '&page=';
 const upcomingMoviesUrl = BASE_URL.TMDB_API + TMDB_URLS.UPCOMING_MOVIES + environment.API_KEY + '&page=';
 const genresUrl = BASE_URL.TMDB_API + TMDB_URLS.GENRES + environment.API_KEY + '&language=en-US';
 const sortPreferenceUrl = environment.JSONSERVER + JSON_SERVER_URLS.USER_DETAILS;
+class StoreMock {
+  // How we did it before
+  select = jasmine.createSpy().and.returnValue(of('quote'));
+  dispatch = jasmine.createSpy();
+}
 beforeEach(() => {
   TestBed.configureTestingModule({
-    providers: [HomeService, LogService],
+    providers: [HomeService, LogService, {provide:Store,useClass:StoreMock}],
     imports: [HttpClientTestingModule]
   });
 });

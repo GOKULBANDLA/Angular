@@ -14,12 +14,18 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { Observable, of } from 'rxjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeService } from '../../services/home.service';
+import { HomeFilterPipe } from 'src/app/shared/pipes/home-filter.pipe';
 const storeStub = {
     select: () => {
       const todos = [{id: 1}];
       return of( todos );
     }
   };
+  const MockPipe={
+    transform(a,b,c){
+      return a;
+    }
+  }
 describe('HomeComponentinContainers', () => {
     let component:HomeComponent;
     let fixture:ComponentFixture<HomeComponent>;
@@ -30,11 +36,12 @@ describe('HomeComponentinContainers', () => {
           imports: [BrowserAnimationsModule,MaterialModule,FlexLayoutModule,ReactiveFormsModule,RouterTestingModule,HttpClientTestingModule]
          ,
           declarations: [
-           HomeComponent,HomePageComponent,MovieDropdownsComponent,MovieCardComponent,MovieBookingComponent
+           HomeComponent,HomePageComponent,MovieDropdownsComponent,MovieCardComponent,MovieBookingComponent,HomeFilterPipe
         ],
         providers:[
             {provide:Store,useValue:storeStub},
-            {provide:HomeService,useValue:homeService}
+            {provide:HomeService,useValue:homeService},
+            {provide:HomeFilterPipe,useValue:MockPipe}
         ]
          
         }).compileComponents();

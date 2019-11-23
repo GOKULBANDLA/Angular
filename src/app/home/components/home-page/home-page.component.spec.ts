@@ -12,22 +12,29 @@ import { HttpClientTestingModule,
 import { Action, Store } from "@ngrx/store";
 import { HomeService } from '../../services/home.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeFilterPipe } from 'src/app/shared/pipes/home-filter.pipe';
+
 describe('HomepageComponent', () => {
    let component:HomePageComponent;
    let fixture:ComponentFixture<HomePageComponent>
 
-
+class MockPipe{
+  transform(a,b,c){
+    return a;
+  }
+}
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [BrowserAnimationsModule,
         RouterTestingModule,MaterialModule,ReactiveFormsModule,FlexLayoutModule,HttpClientTestingModule,
       ],
       declarations: [
-        HomePageComponent,MovieCardComponent,MovieDropdownsComponent,MovieBookingComponent
+        HomePageComponent,MovieCardComponent,MovieDropdownsComponent,MovieBookingComponent,HomeFilterPipe,
       ],providers:[
-        { provide: Store }
+        { provide: Store },
+        {provide:HomeFilterPipe,useClass:MockPipe}
       ]
-     
+    
     }).compileComponents();
   }));
   
@@ -56,4 +63,3 @@ it('Get Language',()=>{
 })
  
 });
-

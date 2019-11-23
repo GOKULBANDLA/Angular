@@ -9,7 +9,11 @@ import { Store } from '@ngrx/store';
 import { MatDialog } from '@angular/material';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { of } from 'rxjs';
-
+class StoreMock {
+    // How we did it before
+    select = jasmine.createSpy().and.returnValue(of('quote'));
+    dispatch = jasmine.createSpy();
+  }
 describe('MovieCardComponent', () => {
     let component:MovieCardComponent;
     let fixture:ComponentFixture<MovieCardComponent>
@@ -36,7 +40,7 @@ describe('MovieCardComponent', () => {
        declarations: [
        MovieCardComponent,MovieBookingComponent,
        ],providers:[
-         { provide: Store }, MatDialog,
+         { provide: Store,useClass:StoreMock }, MatDialog,
          { provide: MatDialog, useValue: activeModal }
        ], schemas: [CUSTOM_ELEMENTS_SCHEMA]
       
